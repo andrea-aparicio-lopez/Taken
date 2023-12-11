@@ -1,0 +1,14 @@
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\bin\Debug\net6.0\Taken.exe
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\bin\Debug\net6.0\Taken.deps.json
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\bin\Debug\net6.0\Taken.runtimeconfig.json
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\bin\Debug\net6.0\Taken.dll
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\bin\Debug\net6.0\Taken.pdb
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.AssemblyInfoInputs.cache
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.AssemblyInfo.cs
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.dll
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\refint\Taken.dll
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.pdb
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\Taken.genruntimeconfig.cache
+C:\Users\oscar\Documents\Proyectillos\Taken\Taken\obj\Debug\net6.0\ref\Taken.dll
