@@ -154,7 +154,9 @@
         static int PideMov()
         {
             Console.Write("Mover.....");
-            int num = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+            int num;
+            int.TryParse(input, out num);
             Console.WriteLine();
             return num;
         }
