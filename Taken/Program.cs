@@ -14,7 +14,13 @@
             bool resuelto = Resuelto(tab);
             while (!resuelto)
             {
-                bool mov = Mueve(tab, PideMov());
+                //bool mov = Mueve(tab, PideMov());
+                //if (mov)
+                //{
+                //    Muestra(tab);
+                //    resuelto = Resuelto(tab);
+                //}
+                bool mov = MuevePorFlechas(tab, PideMovFlechas());
                 if (mov)
                 {
                     Muestra(tab);
@@ -159,6 +165,55 @@
             int.TryParse(input, out num);
             Console.WriteLine();
             return num;
+        }
+
+        // Recibe el tablero y una dirección. Si puede, mueve al hueco libre el valor de la casilla adyacente en esa dirección.
+        static bool MuevePorFlechas(int[,] tab, char dir)
+        {
+            int f, c;
+            bool mov = false;
+            Busca(tab, 0, out f, out c);
+            if(dir == 'w' && f < tab.GetLength(0) - 1)
+            {
+                mov = Intercambia(tab, f, c, (f + 1), c);
+            }
+            else if(dir == 'a' && c < tab.GetLength(1) - 1)
+            {
+                mov = Intercambia(tab, f, c, f, (c + 1));
+            }
+            else if(dir == 's' && f > 0)
+            {
+                mov = Intercambia(tab, f, c, (f - 1), c);
+            }
+            else if(dir == 'd' && c > 0)
+            {
+                mov = Intercambia(tab, f, c, f, (c - 1));
+            }
+            return mov;
+        }
+
+        // Pide el input con las flechas
+        static char PideMovFlechas()
+        {
+            char dir = ' ';
+            if(Console.KeyAvailable)
+            {
+                string input = Console.ReadKey(true).Key.ToString().ToUpper();
+                if (input == "W" || input == ConsoleKey.UpArrow.ToString().ToUpper()) dir = 'w';
+                else if (input == "A" || input == ConsoleKey.LeftArrow.ToString().ToUpper()) dir = 'a';
+                else if (input == "S" || input == ConsoleKey.DownArrow.ToString().ToUpper()) dir = 's';
+                else if (input == "D" || input == ConsoleKey.RightArrow.ToString().ToUpper()) dir = 'd';
+            }
+            return dir;
+        }
+
+        // Intercambia el contenido del tablero en las dos posiciones dadas
+        static bool Intercambia(int [,] tab, int f1, int c1, int f2, int c2)
+        {
+            int valor = tab[f1, c1];
+            tab[f1, c1] = tab[f2, c2];
+            tab[f2, c2] = valor;
+            return true;
         }
     }
 }
